@@ -3,20 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "generate": "pnpm wagmi generate",
+    "dev": "pnpm generate && next dev",
+    "build": "pnpm generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/material": "^5.14.7",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/react": "^2.7.1",
+    "encoding": "^0.1.13",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "ethers": "^6.7.1",
+    "lokijs": "1.x",
     "next": "13.4.19",
+    "notistack": "^3.0.1",
+    "nprogress": "^0.2.0",
+    "pino-pretty": "^10.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.2.2"
+    "sass": "^1.66.1",
+    "typescript": "5.2.2",
+    "viem": "^1.10.3",
+    "wagmi": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.0",
+    "@wagmi/cli": "^1.5.0"
   }
 }

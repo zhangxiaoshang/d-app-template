@@ -18,17 +18,44 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 技术栈
 
-To learn more about Next.js, take a look at the following resources:
+Next.js App Router + TypeScript + Mui
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 功能
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [x] .prettierrc
+- [x] scss
+- [x] theme dark/light
+- [x] Mui
+- [x] Mui theme system
+- [x] nprogress
+- [x] wagmi
+- [x] wagmi cli generate hooks
+- [x] web3modal
+- [x] web3modal theme
+- [x] wallet connect
+- [x] ethers: ^6.7.1
+- [x] notistack
+- [x] .env
 
-## Deploy on Vercel
+## 开始开发
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. 通过 Github template 功能创建新的仓库
+2. 在项目根目录执行 `./clearup.sh` 该脚本会删除项目中的 demo 相关代码、文件，具体如下：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+rm -rf src/demo
+rm -rf src/components/demo
+echo NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID= >> .env.local
+```
+
+## 设置
+
+通用设置在 `src/config.ts` 中
+
+## 主题
+
+亮/暗主题未具体实现
+切换系统亮/暗模式，会影响背景色、文字颜色，这个在 `global.css` 有相关设置
+然后，可以通过 `setSettings` 设置 `mode` 这个控制的是 `mui` 的 `light/dark`
