@@ -1,5 +1,5 @@
 echo remove src/demo
-rm -rf src/demo
+rm -rf src/app/demo
 
 echo remove src/components/demo
 rm -rf src/components/demo
