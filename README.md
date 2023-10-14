@@ -22,6 +22,10 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 Next.js App Router + TypeScript + Mui
 
+## CI
+
+- husky: git commit, git push check
+
 ## 功能
 
 - [x] .prettierrc
