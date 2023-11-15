@@ -4,12 +4,9 @@ import Button from '@mui/material/Button'
 import Switch from '@mui/material/Switch'
 
 // components
+import ERC20Meta from '@/components/demo/ERC20Meta'
 import Greet from '@/components/demo/Greet'
 import MaterialUISwitch from '@/components/demo/MaterialUISwitch'
-import ERC20Meta from '@/components/demo/ERC20Meta'
-
-// web3button
-import Web3Button from '@/components/core/web3modal/Web3Button'
 
 import EnqueueSnackbarButton from '@/components/demo/EnqueueSnackbarButton'
 
@@ -42,7 +39,8 @@ export default function Demo() {
       <Link href="/">home</Link>
 
       <h2>web3 modal</h2>
-      <Web3Button></Web3Button>
+      {/* <Web3Button></Web3Button> */}
+      <w3m-button />
 
       <br />
       <EnqueueSnackbarButton

@@ -1,9 +1,9 @@
-import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import './globals.css'
 
 // provider
-import Content from './Content'
+import RootProvider from './RootProvider'
 
 // components
 import NProgress from '@/components/core/nprogress/NProgress'
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NProgress></NProgress>
-        <Content>{children}</Content>
+        <RootProvider>{children}</RootProvider>
       </body>
     </html>
   )
